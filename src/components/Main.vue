@@ -4,8 +4,8 @@
             <h1>Escutar muda tudo</h1>
             <p>Milhões de músicas e podcasts para explorar. E nem precisa de cartão de crédito.</p>
         </section>
-        <div :class="{ outline: outline }">
-            <button @click="activeButton">Baixe o spotify free</button>
+        <div>
+            <button>Baixe o spotify free</button>
         </div>
     </main>
 </template>
@@ -61,22 +61,6 @@ export default {
         font-weight: 600;
     }
     
-    .container div {
-        color: #fff;
-        height: auto;
-        border-radius: 50px;
-        border: 3px solid rgba(0, 0, 0, 0);
-        padding: 3px;
-        transition: .1s;
-        position: absolute;
-        top: 540px;
-    }
-
-    .outline {
-        animation: fadein 0.3s;
-        border: 3px solid #fff;
-    }
-
     .container div button {
         padding: 16px 32px;
         border: none;
@@ -87,20 +71,11 @@ export default {
         text-transform: uppercase;
         background: #25CB60;
         cursor: pointer;
-        transition: .1s;
+        transition: .2s;
         outline: none;
     }
 
-    .container div:hover {
+    .container div button:hover {
         transform: scale(1.05);
-    }
-
-    @keyframes fadein {
-        0% {
-            border: 3px solid rgba(0, 0, 0, 0);
-        }
-        100% {
-            border: 3px solid #fff;
-        }
     }
 </style>

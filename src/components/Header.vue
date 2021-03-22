@@ -22,7 +22,6 @@ export default {
 
 <style scoped>
     .container {
-        width: 100%;
         height: 80px;
         background: #000;
         display: flex;
@@ -37,6 +36,7 @@ export default {
     .container svg {
         fill: #fff;
         width: 132px;
+        cursor: pointer;
     }
 
     .container .nav {
