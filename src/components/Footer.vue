@@ -116,7 +116,7 @@ export default {
 
 <style scoped>
     footer {
-        background: #ccc;
+        background: #000;
     }
     .sub-footer svg {
         fill: #fff;
